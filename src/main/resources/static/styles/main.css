@@ -1,0 +1,39 @@
+.container {
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    background: whitesmoke;
+}
+.json-textarea {
+    padding: 10px;
+    width: 500px;
+    min-height: 900px;
+    border: bisque 1px solid;
+    border-radius: 5px;
+}
+
+.form-button {
+    display: block;
+}
+.gcode-block {
+    padding: 0 20px;
+}
+
+.gcode-container {
+    padding: 10px;
+    width: 500px;
+    min-height: 900px;
+    background: floralwhite;
+    border: bisque 1px solid;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.gcode-frame {
+    display: block;
+}
+
+.form-button {
+    margin: 20px 0 0 0;
+    width: 40%;
+    height: 32px;
+}
