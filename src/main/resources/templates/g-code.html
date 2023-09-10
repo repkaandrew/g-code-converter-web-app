@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GCodeConverter</title>
+    <link th:href="@{/styles/main.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <h3>Path as json:</h3>
+        <form action="#" th:action="@{/}" th:object="${pathInput}" method="post">
+            <br>
+            <textarea class="json-textarea" type="text" th:field="*{steps}" id="step" placeholder="Path steps">
+    </textarea>
+            <input class="form-button" type="submit" value="Convert to GCode">
+        </form>
+    </div>
+    <div class="gcode-block">
+        <h3>Generated G-code:</h3>
+        <div class="gcode-container">
+            <tr th:each="frame: ${gCode}">
+                <td class="gcode-frame" th:text="${frame}"></td>
+                <br>
+            </tr>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
